@@ -1,10 +1,14 @@
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
 </head>
 <body>
-$END$
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Log In</legend>
+        {{ form|crispy }}
+    </fieldset>
 </body>
 </html>
