@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from SkinLife import views
+from skin_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.sample),
+    path('', views.home),
 ]
