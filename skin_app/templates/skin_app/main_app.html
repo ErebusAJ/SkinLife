@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Skin Life</title>
-</head>
-<body>
-    <p>
-        At [Your Website Name], our commitment to revolutionizing skin disease detection sets us apart. Utilizing cutting-edge technology,
-        we employ advanced deep learning models, including ResNet, ensuring precise and reliable results.
-        What truly distinguishes us is the synergy between our state-of-the-art algorithms and the expertise of our dermatology professionals.
-        With a user-friendly interface, a focus on privacy, and a commitment to continuous improvement, we aim not just to detect skin
-        conditions but also to empower our users with knowledge. Beyond accurate detection, we offer educational resources and foster a
-        supportive community. Your skin health is our priority, and at [Your Website Name], we're dedicated to providing a
-        seamless and empowering experience on your journey to well-being.
-    </p>
-    <form action="{% url 'logout' %}" method="post">
-        {% csrf_token %}
-        <button type="submit" class="nav-item nav-link" style="border: none; background: none; cursor: pointer;">Logout</button>
-    </form>
-    <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+{% extends 'skin_app/base.html' %}
+{% block content %}
+    <body>
+        <p>
+            At [Your Website Name], our commitment to revolutionizing skin disease detection sets us apart. Utilizing cutting-edge technology,
+            we employ advanced deep learning models, including ResNet, ensuring precise and reliable results.
+            What truly distinguishes us is the synergy between our state-of-the-art algorithms and the expertise of our dermatology professionals.
+            With a user-friendly interface, a focus on privacy, and a commitment to continuous improvement, we aim not just to detect skin
+            conditions but also to empower our users with knowledge. Beyond accurate detection, we offer educational resources and foster a
+            supportive community. Your skin health is our priority, and at [Your Website Name], we're dedicated to providing a
+            seamless and empowering experience on your journey to well-being.
+        </p>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="nav-item nav-link" style="border: none; background: none; cursor: pointer;">Logout</button>
+        </form>
 
-</body>
-</html>
+    </body>
+{% endblock content %}
