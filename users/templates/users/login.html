@@ -1,6 +1,7 @@
 {% extends 'skin_app/base.html' %}
 {% block content %}
 {% load crispy_forms_tags %}
+<div class="cent_sec">
     <div class="content-section" xmlns="http://www.w3.org/1999/html">
         <form method="POST">
             {% csrf_token %}
@@ -22,4 +23,5 @@
         </div>
 
     </div>
-{% endblock content %}
+</div>
+{% endblock content %}+

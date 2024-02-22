@@ -3454,8 +3454,8 @@ figcaption {
 .section-4 {
     height: 100px;
     background-color: #4daabf;
-    margin-top: 50px;
-    padding: auto;
+    margin-top: -50px;
+    padding top:20px;
     position: -webkit-sticky;
     position: sticky;
 }
@@ -4160,3 +4160,53 @@ figcaption {
         grid-area: 6 / 1 / 7 / 2;
     }
 }
+/*centerering users*/
+.cent_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.content-section {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4faff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend-border {
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.btn-outline-info {
+    color: #fff;
+    background-color: #4daabf;
+    border: 2px solid #17a2b8;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-outline-info:hover {
+    background-color: #0e91a8;
+    border-color: #0e91a8;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+
