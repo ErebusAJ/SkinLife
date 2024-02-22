@@ -1,19 +1,62 @@
 {% extends 'skin_app/base.html' %}
-{% block content %}
-    <body>
-        <p>
-            At [Your Website Name], our commitment to revolutionizing skin disease detection sets us apart. Utilizing cutting-edge technology,
-            we employ advanced deep learning models, including ResNet, ensuring precise and reliable results.
-            What truly distinguishes us is the synergy between our state-of-the-art algorithms and the expertise of our dermatology professionals.
-            With a user-friendly interface, a focus on privacy, and a commitment to continuous improvement, we aim not just to detect skin
-            conditions but also to empower our users with knowledge. Beyond accurate detection, we offer educational resources and foster a
-            supportive community. Your skin health is our priority, and at [Your Website Name], we're dedicated to providing a
-            seamless and empowering experience on your journey to well-being.
-        </p>
-        <form action="{% url 'logout' %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="nav-item nav-link" style="border: none; background: none; cursor: pointer;">Logout</button>
-        </form>
+{% load static %}
+<!--<html data-wf-domain="plantics-65999e.webflow.io" data-wf-page="65d59ebd1d3088545028bc88"-->
+<!--    data-wf-site="65d59ebc1d3088545028bc49" lang="en"-->
+<!--    class="w-mod-js wf-montserrat-n1-active wf-montserrat-i1-active wf-montserrat-n2-active wf-montserrat-i2-active wf-montserrat-n3-active wf-montserrat-i3-active wf-montserrat-n4-active wf-montserrat-i4-active wf-montserrat-n5-active wf-montserrat-i5-active wf-montserrat-n6-active wf-montserrat-i6-active wf-montserrat-n7-active wf-montserrat-i7-active wf-montserrat-n8-active wf-montserrat-i8-active wf-montserrat-n9-active wf-montserrat-i9-active wf-droidserif-n4-active wf-droidserif-i4-active wf-droidserif-n7-active wf-droidserif-i7-active wf-exo-n1-active wf-exo-i1-active wf-exo-n2-active wf-exo-i2-active wf-exo-n3-active wf-exo-i3-active wf-exo-n4-active wf-exo-i4-active wf-exo-n5-active wf-exo-i5-active wf-exo-n6-active wf-exo-i6-active wf-exo-n7-active wf-exo-i7-active wf-exo-n8-active wf-exo-i8-active wf-exo-n9-active wf-exo-i9-active wf-active">-->
 
-    </body>
+<!--<head>-->
+<!--    <style>-->
+<!--        .wf-force-outline-none[tabindex="-1"]:focus {-->
+<!--            outline: none;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>Projects</title>-->
+<!--    <meta content="Projects" property="og:title">-->
+<!--    <meta content="Projects" property="twitter:title">-->
+<!--    <meta content="width=device-width, initial-scale=1" name="viewport">-->
+<!--    <meta content="Webflow" name="generator">-->
+<!--    <link href="{% static 'skin_app/app_style.css' %}" rel="stylesheet" type="text/css">-->
+<!--    <link href="https://fonts.googleapis.com" rel="preconnect">-->
+<!--    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">-->
+<!--    <script src="./diag.js" type="text/javascript"></script>-->
+<!--    <link rel="stylesheet"-->
+<!--        href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CDroid+Serif:400,400italic,700,700italic%7CExo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"-->
+<!--        media="all">-->
+<!--    <script-->
+<!--        type="text/javascript">WebFont.load({ google: { families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Droid Serif:400,400italic,700,700italic", "Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"] } });</script>-->
+<!--    <script-->
+<!--        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>-->
+<!--    <link href="https://assets-global.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">-->
+<!--    <link href="https://assets-global.website-files.com/img/webclip.png" rel="apple-touch-icon">-->
+<!--</head>-->
+{% block content %}
+    <section>
+        <div class="w-layout-blockcontainer container-9 w-container">
+            <div class="columns-2 w-row">
+                <div class="w-col w-col-7">
+                    <h1 class="heading-3">Introducing our Derma Checker, your personalized skincare companion designed
+                        to assess and enhance your skin health with expert precision</h1>
+                    <h4 class="heading-4">✓ Examine your skin concerns&nbsp;<br>✓ Uncover the secrets to radiant
+                        skin&nbsp;&nbsp;<br>✓ Strategize your skincare journey&nbsp;<br>✓ Prepare for your derma
+                        adventure</h4>
+<!--                    <div class="w-layout-blockcontainer container-10 w-container">-->
+<!--                        <input type="file" accept="image/*" capture="camera" id="imageUpload"-->
+<!--                            onchange="displayImage(this)" style="display:none">-->
+<!--                        <label for="imageUpload" class="button-3 w-button">Upload</label>-->
+<!--                    </div>-->
+                    <br><br><br><br><br><br>
+                    <div class="w-layout-blockcontainer container-10 w-container"><a href="#"
+                            class="button-2 w-button">DIAGNOSE</a></div>
+                </div>
+                <div class="w-col w-col-5"><img
+                        src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d78ee7a96c80032e6e603f_illustration-homepage.png"
+                        loading="lazy" sizes="(max-width: 767px) 96vw, 40vw"
+                        srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d78ee7a96c80032e6e603f_illustration-homepage-p-500.png 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d78ee7a96c80032e6e603f_illustration-homepage-p-800.png 800w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d78ee7a96c80032e6e603f_illustration-homepage.png 826w"
+                        alt="" class="image-5"></div>
+            </div>
+        </div>
+    </section>
+
 {% endblock content %}
+</html>
