@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'skin_app.apps.SkinAppConfig',
     'users.apps.UsersConfig',
+    'model_prediction.apps.ModelPredictionConfig',
     'crispy_forms',
     "crispy_bootstrap4",
     'django.contrib.admin',
