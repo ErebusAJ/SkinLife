@@ -40,13 +40,13 @@
                 {% if user.is_authenticated %}
 <nav role="navigation" class="navigation-items w-nav-menu"><a href="{% url 'dashboard'%}" aria-current="page"
         class="navigation-item w-nav-link w--current">home</a>
-    <link rel="prerender" href="/"><a href="/projects" class="navigation-item w-nav-link">newsstand</a><a href="{% url 'profile' %}"
+    <link rel="prerender" href="/"><a href="{% url 'newsstand' %}" class="navigation-item w-nav-link">newsstand</a><a href="{% url 'profile' %}"
         class="navigation-item w-nav-link">profile</a>
 </nav>
 {% else %}
 <nav role="navigation" class="navigation-items w-nav-menu"><a href="/" aria-current="page"
         class="navigation-item w-nav-link w--current">home</a>
-    <link rel="prerender" href="/"><a href="/projects" class="navigation-item w-nav-link">newsstand</a>
+    <link rel="prerender" href="/"><a href="{% url 'newsstand' %}" class="navigation-item w-nav-link">newsstand</a>
 </nav>
 {% endif %}
                 <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"

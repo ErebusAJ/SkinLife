@@ -7,6 +7,10 @@ def home(request):
     return render(request, 'skin_app/home.html')
 
 
+def newsstand(request):
+    return render(request, 'skin_app/newsstand.html')
+
+
 @login_required()
 def dashboard(request):
     return render(request, 'skin_app/main_app.html')
