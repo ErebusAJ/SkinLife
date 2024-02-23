@@ -1,4 +1,5 @@
 {% extends 'skin_app/base.html' %}
+{% load static %}
 {% block content %}
 <div class="section cc-store-home-wrap">
         <div class="background-video w-background-video w-background-video-atom"
@@ -259,40 +260,40 @@
                             <script
                                 src="https://cdnjs.cloudflare.com/ajax/libs/webflow/your-webflow-version/webflow.js"></script>
 
-                            <div class="slide-2 w-slide" aria-label="1 of 5" role="group"
-                                style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;">
-                                <h1 class="heading-2">Aryan Sharma</h1><img
-                                    src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar.jpg"
-                                    loading="lazy" sizes="120.00000762939453px"
-                                    srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar-p-500.jpg 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar-p-800.jpg 800w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar.jpg 959w"
-                                    alt="" class="image-4">
-                                <div class="rich-text-block w-richtext">
-                                    <p class="paragraph-2">Meet Aryan Sharma, a dynamic second-year student whose
-                                        passion for learning and commitment to excellence define his academic journey.
-                                        Aryan brings a blend of curiosity and dedication to his studies, making
-                                        significant strides in his chosen field. Join us in exploring the aspirations
-                                        and achievements that shape Aryan's academic path, embodying the spirit of
-                                        growth and ambition at every turn.</p>
-                                </div>
-                            </div>
-                            <div class="w-slide" aria-label="2 of 5" role="group"
-                                style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;"
-                                aria-hidden="true">
-                                <h1 class="heading-2" aria-hidden="true">Aarya Jamwal</h1><img
-                                    src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj.jpg"
-                                    loading="lazy" sizes="120.00000762939453px"
-                                    srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-500.jpg 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-800.jpg 800w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-1080.jpg 1080w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj.jpg 1751w"
-                                    alt="" class="image-4" aria-hidden="true">
-                                <div class="rich-text-block w-richtext" aria-hidden="true">
-                                    <p class="paragraph-2" aria-hidden="true">Introducing Aarya Jamwal, a spirited
-                                        second-year student whose academic journey is marked by a relentless pursuit of
-                                        knowledge excellence. Aarya's enthusiasm for learning is matched only by a
-                                        determined work ethic, as reflected in the significant strides made within the
-                                        academic realm. Embark on a journey to discover the aspirations and
-                                        accomplishments that exemplifying a spirit of continuous growth and unwavering
-                                        ambition.</p>
-                                </div>
-                            </div>
+<!--                            <div class="slide-2 w-slide" aria-label="1 of 5" role="group"-->
+<!--                                style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;">-->
+<!--                                <h1 class="heading-2">Aryan Sharma</h1><img-->
+<!--                                    src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar.jpg"-->
+<!--                                    loading="lazy" sizes="120.00000762939453px"-->
+<!--                                    srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar-p-500.jpg 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar-p-800.jpg 800w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5f35f925d365ba52744f4_ar.jpg 959w"-->
+<!--                                    alt="" class="image-4">-->
+<!--                                <div class="rich-text-block w-richtext">-->
+<!--                                    <p class="paragraph-2">Meet Aryan Sharma, a dynamic second-year student whose-->
+<!--                                        passion for learning and commitment to excellence define his academic journey.-->
+<!--                                        Aryan brings a blend of curiosity and dedication to his studies, making-->
+<!--                                        significant strides in his chosen field. Join us in exploring the aspirations-->
+<!--                                        and achievements that shape Aryan's academic path, embodying the spirit of-->
+<!--                                        growth and ambition at every turn.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="w-slide" aria-label="2 of 5" role="group"-->
+<!--                                style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;"-->
+<!--                                aria-hidden="true">-->
+<!--                                <h1 class="heading-2" aria-hidden="true">Aarya Jamwal</h1><img-->
+<!--                                    src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj.jpg"-->
+<!--                                    loading="lazy" sizes="120.00000762939453px"-->
+<!--                                    srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-500.jpg 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-800.jpg 800w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj-p-1080.jpg 1080w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d5fb5d23b3dbb85c729209_aj.jpg 1751w"-->
+<!--                                    alt="" class="image-4" aria-hidden="true">-->
+<!--                                <div class="rich-text-block w-richtext" aria-hidden="true">-->
+<!--                                    <p class="paragraph-2" aria-hidden="true">Introducing Aarya Jamwal, a spirited-->
+<!--                                        second-year student whose academic journey is marked by a relentless pursuit of-->
+<!--                                        knowledge excellence. Aarya's enthusiasm for learning is matched only by a-->
+<!--                                        determined work ethic, as reflected in the significant strides made within the-->
+<!--                                        academic realm. Embark on a journey to discover the aspirations and-->
+<!--                                        accomplishments that exemplifying a spirit of continuous growth and unwavering-->
+<!--                                        ambition.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <div class="w-slide" aria-label="3 of 5" role="group"
                                 style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;"
                                 aria-hidden="true">
@@ -314,19 +315,19 @@
                             <div class="w-slide" aria-label="4 of 5" role="group"
                                 style="transform: translateX(0px); opacity: 1; transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;"
                                 aria-hidden="true">
-                                <h1 class="heading-2" aria-hidden="true">Shreshth Nadda</h1><img
-                                    src="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d6cf2a5391824218cdc22d_kimjon.jpg"
+                                <h1 class="heading-2" aria-hidden="true">Dwij Kaushal</h1><img
+                                    src="{% static 'skin_app/div_s.jpg' %}"
                                     loading="lazy" sizes="120.00000762939453px"
-                                    srcset="https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d6cf2a5391824218cdc22d_kimjon-p-500.jpg 500w, https://assets-global.website-files.com/65d59ebc1d3088545028bc49/65d6cf2a5391824218cdc22d_kimjon.jpg 720w"
+                                    srcset="{% static 'skin_app/div_s.jpg' %}"
                                     alt="" class="image-4" aria-hidden="true">
                                 <div class="rich-text-block w-richtext" aria-hidden="true">
-                                    <p class="paragraph-2" aria-hidden="true">Introducing Shreshth Nadda, a dynamic
-                                        second-year student whose academic expedition is defined by an insatiable thirst
-                                        for knowledge and an unwavering commitment to excellence. Shreshth's scholarly
-                                        endeavors mirror a remarkable blend of curiosity and dedication, propelling him
-                                        toward significant achievements. Explore the unique aspirations and
-                                        accomplishments that illustrates a journey marked by continual growth and
-                                        steadfast ambition.</p>
+                                    <p class="paragraph-2" aria-hidden="true">Meet Dwij Kaushal, an enterprising
+                                        second-year student whose academic odyssey is characterized by a fervent pursuit
+                                        of knowledge to excellence. Dwij's scholarly endeavors showcase a remarkable
+                                        combination of curiosity and diligence, propelling him towards notable
+                                        achievements. Join us in unraveling the distinctive aspirations and
+                                        accomplishments that embodies a journey marked by perpetual growth and
+                                        unwavering ambition.</p>
                                 </div>
                             </div>
                             <div class="w-slide" aria-label="5 of 5" role="group"
@@ -387,8 +388,9 @@
                             <br>&zwj;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skin's Well-being<strong>"</strong>
                         </li>
                         <li class="list-item-3">
-                            <div class="w-layout-blockcontainer container-7 w-container"><a href="/contact"
-                                    class="link"><strong class="bold-text-4">CONTACT&nbsp;US</strong></a>
+                            <div class="w-layout-blockcontainer container-7 w-container"><a href="#" class="button cc-contact-us w-inline-block">
+                <div class="logo-link">Contact Us</div>
+            </a>
                                 <link rel="prefetch" href="/contact">
                             </div>
                         </li>

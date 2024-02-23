@@ -2226,6 +2226,7 @@ textarea.w-select {
 
 .w-layout-blockcontainer {
     max-width: 1000px;
+    z-index:50;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -2632,14 +2633,15 @@ figcaption {
     background-color: #fff;
     border: 1px #000;
     border-radius: 0;
+    z-index: 100;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 250px;
     padding: 30px 50px;
     display: flex;
     position: fixed;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
     right: 0%;
     box-shadow: 0 2px 4px -12px rgba(0, 0, 0, .2);
 }
