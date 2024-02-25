@@ -9,3 +9,5 @@
   * This app contains files for maintaing user database
 * Skin_app
   * This contains landing pages of the webapp      
+
+### Caution : This repository doesn't contain python saved model as it exceeds limit of standard git push
