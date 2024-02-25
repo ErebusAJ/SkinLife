@@ -1,5 +1,11 @@
-# Skin Sage WebApp
+# SkinSage WebApp
 ### Detection of skin disease using ML
-#### SkinLife folder is the main project folder it contains
-* manage.py (To run the local server)
-#### Caution: This doesn't contain our model as it is exceeding limit of push
+### This project is made on django framework it contains different django apps:
+* SkinLife (Main project app)
+* * manage.py (File to run local server)
+* Model Prediction (ML App)
+* * It contains model prediction files
+* Users (User app)
+* * This app contains files for maintaing user database
+* Skin_app
+* * This contains landing pages of the webapp      
